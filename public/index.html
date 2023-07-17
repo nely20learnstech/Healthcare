@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Prestations des Médecins</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Prestations des Médecins👩‍⚕️👨‍⚕️</h1>
+
+  <!-- Form to add new records -->
+  <div class="containForm">
+    <form id="addForm">
+      <input type="text" id="doctorNumber" placeholder="Numéro du médecin" required>
+      <input type="text" id="doctorName" placeholder="Nom du médecin" required>
+      <input type="number" id="daysWorked" placeholder="Nombre de jours" required>
+      <input type="number" id="salaryPerDay" placeholder="Taux journalier" required>
+      <button type="submit" id="add-btn">Ajouter</button>
+    </form>
+  </div>
+
+  <!-- Table to display doctor records -->
+  <div class="container">
+    <table >
+      <thead>
+        <tr>
+          <th>Numéro</th>
+          <th>Nom</th>
+          <th>Nombre de jours</th>
+          <th>Salaire par jours</th>
+          <th>Salaire Totale</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="doctorTable"></tbody>
+    </table>
+
+    <div class="total"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
